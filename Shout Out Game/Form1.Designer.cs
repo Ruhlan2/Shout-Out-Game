@@ -73,16 +73,18 @@
             // 
             // healthBar
             // 
+            healthBar.BackColor = Color.White;
             healthBar.ForeColor = Color.Green;
             healthBar.Location = new Point(769, 30);
             healthBar.Name = "healthBar";
             healthBar.Size = new Size(143, 23);
             healthBar.TabIndex = 3;
+            healthBar.Click += healthBar_Click;
             // 
             // player
             // 
             player.Image = Properties.Resources.up;
-            player.Location = new Point(416, 538);
+            player.Location = new Point(369, 493);
             player.Name = "player";
             player.Size = new Size(71, 100);
             player.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -91,6 +93,7 @@
             // 
             // GameTimer
             // 
+            GameTimer.Enabled = true;
             GameTimer.Interval = 20;
             GameTimer.Tick += MainTimerEvent;
             // 
